@@ -8,6 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * 测试接口
+ *
+ * @author Juning
+ * @date 2018/12/18
+ */
 @RestController
 @AllArgsConstructor
 public class WebSitController {

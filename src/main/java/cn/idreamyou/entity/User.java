@@ -10,6 +10,12 @@ import lombok.ToString;
 
 import java.util.Date;
 
+/**
+ * 用户实体
+ *
+ * @author Juning
+ * @date 2018/12/18
+ */
 @Data
 @ToString
 @EqualsAndHashCode(callSuper = true)
