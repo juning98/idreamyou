@@ -23,7 +23,7 @@
         <google.guava.version>27.0.1-jre</google.guava.version>
         <hikariCP.version>2.7.9</hikariCP.version>
         <swagger.version>2.9.2</swagger.version>
-        <security.oauth.version>2.3.3.RELEASE</security.oauth.version>
+        <security.oauth.version>2.3.4.RELEASE</security.oauth.version>
     </properties>
 
     <dependencies>
