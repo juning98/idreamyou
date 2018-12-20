@@ -32,7 +32,7 @@ public class MyUserDetailsServiceImpl implements MyUserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userService.getOne(Wrappers.<User>query().lambda().eq(User::getName, username));
+        User user = userService.getOne(Wrappers.<User>query().lambda().eq(User::getUsername, username));
         if (user == null) {
             throw new UsernameNotFoundException("用户不存在！");
         }
@@ -42,6 +42,6 @@ public class MyUserDetailsServiceImpl implements MyUserDetailsService {
         dbAuthsSet.add("test");
         Collection<? extends GrantedAuthority> authorities = AuthorityUtils.createAuthorityList(dbAuthsSet.toArray(new String[0]));
 
-        return new UserInfo(user.getId(), user.getName(), SecurityConstants.BCRYPT + user.getPassword(), authorities);
+        return new UserInfo(user.getId(), user.getUsername(), SecurityConstants.BCRYPT + user.getPassword(), authorities);
     }
 }

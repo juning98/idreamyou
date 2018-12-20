@@ -11,7 +11,7 @@
  Target Server Version : 50722
  File Encoding         : 65001
 
- Date: 20/12/2018 00:01:56
+ Date: 21/12/2018 00:11:30
 */
 
 SET NAMES utf8mb4;
@@ -44,23 +44,27 @@ INSERT INTO `sys_oauth_client_details` VALUES ('app', NULL, 'app', 'server', 'pa
 COMMIT;
 
 -- ----------------------------
--- Table structure for user
+-- Table structure for sys_user
 -- ----------------------------
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
+DROP TABLE IF EXISTS `sys_user`;
+CREATE TABLE `sys_user` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) DEFAULT NULL,
-  `gmt_create` datetime DEFAULT NULL,
-  `gmt_modified` datetime DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
+  `phone` varchar(64) NOT NULL,
+  `portrait` varchar(255) DEFAULT NULL COMMENT '头像',
+  `description` varchar(255) DEFAULT NULL COMMENT '描述',
+  `sex` tinyint(1) NOT NULL DEFAULT '1',
+  `gmt_create` datetime DEFAULT CURRENT_TIMESTAMP,
+  `gmt_modified` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
--- Records of user
+-- Records of sys_user
 -- ----------------------------
 BEGIN;
-INSERT INTO `user` VALUES (1, 'root', '2018-12-15 22:53:01', '2018-12-15 22:53:05', '$2a$10$RpFJjxYiXdEsAGnWp/8fsOetMuOON96Ntk/Ym2M/RKRyU0GZseaDC');
+INSERT INTO `sys_user` VALUES (1, 'Juning', '$2a$10$RpFJjxYiXdEsAGnWp/8fsOetMuOON96Ntk/Ym2M/RKRyU0GZseaDC', '18680309941', 'Hi! I Dream You', NULL, 1, '2018-12-20 22:55:56', '2018-12-20 22:55:56');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;

@@ -24,6 +24,7 @@
         <hikariCP.version>2.7.9</hikariCP.version>
         <swagger.version>2.9.2</swagger.version>
         <security.oauth.version>2.3.4.RELEASE</security.oauth.version>
+        <commons-lang.version>3.8.1</commons-lang.version>
     </properties>
 
     <dependencies>
@@ -71,6 +72,12 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${google.guava.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang.version}</version>
         </dependency>
 
         <!-- 个推推送SDK -->
