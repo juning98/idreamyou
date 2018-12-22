@@ -1,7 +1,7 @@
 # idreamyou-IM(server)
----
-**基于Spring boot、OAuth2.0的IM即时通讯服务系统**  
 
+
+**基于Spring boot、OAuth2.0的IM即时通讯服务系统**  
 
 ## 社交公共调用base服务单元
 * 1.用户模块
