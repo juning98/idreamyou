@@ -37,9 +37,8 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
                 // 放行API文档
                 .antMatchers("/v2/api-docs", "/swagger-resources/configuration/ui",
                         "/swagger-resources", "/swagger-resources/configuration/security",
-                        "/swagger-ui.html", "/course/coursebase/**", "/index.html").permitAll()
-                .anyRequest()
-                .authenticated()
+                        "/swagger-ui.html", "/course/coursebase/**").permitAll()
+                .anyRequest().authenticated()
                 .and()
                 .csrf().disable();
     }
