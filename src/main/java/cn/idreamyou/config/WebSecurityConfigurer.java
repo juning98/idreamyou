@@ -28,21 +28,6 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
 
     private final MyUserDetailsService myUserDetailsService;
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http
-                .cors()
-                .and()
-                .authorizeRequests()
-                // 放行API文档
-                .antMatchers("/v2/api-docs", "/swagger-resources/configuration/ui",
-                        "/swagger-resources", "/swagger-resources/configuration/security",
-                        "/swagger-ui.html", "/course/coursebase/**").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .csrf().disable();
-    }
-
     /**
      * 不拦截静态资源
      *

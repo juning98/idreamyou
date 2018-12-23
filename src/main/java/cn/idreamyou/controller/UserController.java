@@ -2,7 +2,9 @@ package cn.idreamyou.controller;
 
 import cn.idreamyou.dto.UserDTO;
 import cn.idreamyou.entity.User;
+import cn.idreamyou.entity.UserInfo;
 import cn.idreamyou.service.UserService;
+import cn.idreamyou.util.SecurityUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
@@ -24,18 +26,9 @@ public class UserController {
 
     private final UserService userService;
 
-    @ApiOperation(value = "获取用户信息", notes = "获取用户信息")
+    @ApiOperation(value = "根据用户ID获取用户信息", notes = "根据用户ID获取用户信息")
     @GetMapping(value = "/{id}")
     public User getById(@PathVariable Long id){
         return userService.getById(id);
     }
-
-    @ApiOperation(value = "修改用户信息", notes = "修改用户信息")
-    @PostMapping
-    public User git(@PathVariable Long id, @Valid @RequestBody UserDTO userDTO){
-        return userService.updateById(id, userDTO);
-    }
-
-
-
 }
