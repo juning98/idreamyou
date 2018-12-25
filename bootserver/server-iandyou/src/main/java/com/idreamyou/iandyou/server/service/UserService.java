@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.service.service;
+package com.idreamyou.iandyou.server.service;
 
 import com.iandyou.common.client.iandyou.dto.UserDTO;
 import com.iandyou.common.entity.idreamyou.UserEntity;

@@ -1,8 +1,8 @@
-package com.idreamyou.iandyou.service.service.impl;
+package com.idreamyou.iandyou.server.service.impl;
 
-import com.idreamyou.iandyou.service.constant.SecurityConstants;
-import com.idreamyou.iandyou.service.service.MyUserDetailsService;
-import com.idreamyou.iandyou.service.service.UserService;
+import com.idreamyou.iandyou.server.constant.SecurityConstants;
+import com.idreamyou.iandyou.server.service.MyUserDetailsService;
+import com.idreamyou.iandyou.server.service.UserService;
 import com.iandyou.common.entity.idreamyou.UserEntity;
 import com.iandyou.common.entity.idreamyou.UserInfoEntity;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;

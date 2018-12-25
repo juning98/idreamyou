@@ -1,4 +1,4 @@
-package com.iandyou.common.util.common;
+package com.iandyou.common.util.common.SencurityUtils;
 
 import com.iandyou.common.entity.idreamyou.UserInfoEntity;
 import lombok.experimental.UtilityClass;

@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.service.constant;
+package com.idreamyou.iandyou.server.constant;
 
 /**
  * Spring Security 常量

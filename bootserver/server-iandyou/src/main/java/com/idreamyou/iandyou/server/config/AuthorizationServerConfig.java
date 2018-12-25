@@ -1,8 +1,8 @@
-package com.idreamyou.iandyou.service.config;
+package com.idreamyou.iandyou.server.config;
 
-import com.idreamyou.iandyou.service.constant.SecurityConstants;
-import com.idreamyou.iandyou.service.service.MyClientDetailsService;
-import com.idreamyou.iandyou.service.service.MyUserDetailsService;
+import com.idreamyou.iandyou.server.constant.SecurityConstants;
+import com.idreamyou.iandyou.server.service.MyClientDetailsService;
+import com.idreamyou.iandyou.server.service.MyUserDetailsService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

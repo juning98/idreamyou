@@ -8,8 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common-client" />
         <module name="common-entity" />
+        <module name="common-iandyou-api" />
         <module name="common-util" />
-        <module name="iandyou" />
+        <module name="server-iandyou" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,10 +19,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bootserver" options="-parameters" />
+      <module name="common-api" options="" />
       <module name="common-client" options="-parameters" />
       <module name="common-entity" options="-parameters" />
+      <module name="common-iandyou-api" options="-parameters" />
       <module name="common-util" options="-parameters" />
       <module name="iandyou" options="-parameters" />
+      <module name="server-iandyou" options="-parameters" />
     </option>
   </component>
 </project>

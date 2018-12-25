@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.login;
+package com.idreamyou.iandyou.api.login;
 
 import com.iandyou.common.entity.idreamyou.UserEntity;
 import io.swagger.annotations.Api;

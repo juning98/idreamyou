@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.service.controller;
+package com.idreamyou.iandyou.server.controller;
 
 
 import org.slf4j.Logger;

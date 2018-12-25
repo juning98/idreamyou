@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.service.constant;
+package com.idreamyou.iandyou.server.constant;
 
 /**
  * 公用常量

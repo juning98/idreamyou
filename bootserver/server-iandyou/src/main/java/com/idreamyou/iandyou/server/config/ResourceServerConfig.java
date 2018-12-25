@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.service.config;
+package com.idreamyou.iandyou.server.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

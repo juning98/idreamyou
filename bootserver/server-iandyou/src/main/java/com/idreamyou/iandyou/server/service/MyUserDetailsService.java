@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.service.service;
+package com.idreamyou.iandyou.server.service;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
 

@@ -20,6 +20,7 @@
     <modules>
         <module>common</module>
         <module>bootserver</module>
+        <module>common-api</module>
     </modules>
 
 
@@ -67,6 +68,23 @@
             <artifactId>mybatis-plus-extension</artifactId>
             <version>3.0.6</version>
             <scope>compile</scope>
+        </dependency>
+        <!--swagger2-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>1.6.0.RELEASE</version>
+        </dependency>
+        <!--spring-web-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.11.RELEASE</version>
         </dependency>
     </dependencies>
 

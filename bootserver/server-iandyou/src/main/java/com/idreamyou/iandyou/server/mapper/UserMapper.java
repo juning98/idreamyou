@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.service.mapper;
+package com.idreamyou.iandyou.server.mapper;
 
 import com.iandyou.common.entity.idreamyou.UserEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

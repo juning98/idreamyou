@@ -1,4 +1,4 @@
-package com.idreamyou.iandyou.service.config;
+package com.idreamyou.iandyou.server.config;
 
 import com.baomidou.mybatisplus.core.injector.ISqlInjector;
 import com.baomidou.mybatisplus.extension.injector.LogicSqlInjector;
@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2018/12/18
  */
 @Configuration
-@MapperScan("com.idreamyou.iandyou.service.mapper")
+@MapperScan("com.idreamyou.iandyou.server.mapper")
 public class MybatisPlusConfigurer {
 
     /**

@@ -1,10 +1,10 @@
-package com.idreamyou.iandyou.service.service.impl;
+package com.idreamyou.iandyou.server.service.impl;
 
 import com.iandyou.common.client.iandyou.dto.UserDTO;
 import com.iandyou.common.entity.idreamyou.UserEntity;
 import com.iandyou.common.entity.idreamyou.UserInfoEntity;
-import com.idreamyou.iandyou.service.service.UserService;
-import com.idreamyou.iandyou.service.mapper.UserMapper;
+import com.idreamyou.iandyou.server.service.UserService;
+import com.idreamyou.iandyou.server.mapper.UserMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.StringUtils;

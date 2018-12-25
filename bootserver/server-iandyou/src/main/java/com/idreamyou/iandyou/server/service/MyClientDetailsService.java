@@ -1,6 +1,6 @@
-package com.idreamyou.iandyou.service.service;
+package com.idreamyou.iandyou.server.service;
 
-import com.idreamyou.iandyou.service.constant.SecurityConstants;
+import com.idreamyou.iandyou.server.constant.SecurityConstants;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.oauth2.common.exceptions.InvalidClientException;
 import org.springframework.security.oauth2.provider.ClientDetails;
