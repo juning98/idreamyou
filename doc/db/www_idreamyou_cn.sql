@@ -68,3 +68,5 @@ INSERT INTO `sys_user` VALUES (1, 'Juning', '$2a$10$RpFJjxYiXdEsAGnWp/8fsOetMuOO
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+

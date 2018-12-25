@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.idreamyou</groupId>
+    <!--git上项目名字是idreamyou-->
+    <groupId>com.idreamyou</groupId>
     <artifactId>idreamyou</artifactId>
-    <version>${idreamyou.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>idreamyou</name>
-    <packaging>jar</packaging>
-    <description>IM</description>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.7.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <modules>
+        <module>common</module>
+        <module>bootserver</module>
+    </modules>
+
 
     <properties>
-        <idreamyou.version>1.0.0</idreamyou.version>
+        <idreamyou.version>1.0.0-SNAPSHOT</idreamyou.version>
         <spring-boot.version>2.0.7.RELEASE</spring-boot.version>
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -29,164 +41,35 @@
         <jackson.modules>2.9.6</jackson.modules>
     </properties>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.7.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-
+    <!-- 我们自己的工具包 -->
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!-- spring security 、oauth依赖 -->
-        <dependency>
-            <groupId>org.springframework.security.oauth</groupId>
-            <artifactId>spring-security-oauth2</artifactId>
-            <version>${security.oauth.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-            <exclusions>
-                <!--旧版本 redis操作有问题-->
-                <exclusion>
-                    <artifactId>spring-security-oauth2</artifactId>
-                    <groupId>org.springframework.security.oauth</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>${google.guava.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons-lang.version}</version>
-        </dependency>
-
-        <!--网络请求 start -->
-        <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-client</artifactId>
-            <version>${glassfish.jersey.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-server</artifactId>
-            <version>${glassfish.jersey.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet</artifactId>
-            <version>${glassfish.jersey.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-jackson</artifactId>
-            <version>${glassfish.jersey.version}</version>
-        </dependency>
-        <!--网络请求 end -->
-
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis-plus.version}</version>
-        </dependency>
-
-        <!--数据库-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.connector.version}</version>
-        </dependency>
-
-        <!--Lombok-->
+        <!--lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>provided</scope>
         </dependency>
-
-        <!--数据库连接池-->
+        <!--security-->
         <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>${hikariCP.version}</version>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>5.0.10.RELEASE</version>
+            <scope>compile</scope>
         </dependency>
-
-        <!--jasypt配置文件加解密-->
+        <!--mybatis-plus-->
         <dependency>
-            <groupId>com.github.ulisesbocchio</groupId>
-            <artifactId>jasypt-spring-boot-starter</artifactId>
-            <version>${jasypt.version}</version>
-        </dependency>
-
-        <!--jackson模块-->
-        <dependency>
-            <groupId>com.fasterxml.jackson.module</groupId>
-            <artifactId>jackson-module-parameter-names</artifactId>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-annotation</artifactId>
+            <version>3.0.6</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.datatype</groupId>
-            <artifactId>jackson-datatype-jdk8</artifactId>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.0.6</version>
+            <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.datatype</groupId>
-            <artifactId>jackson-datatype-jsr310</artifactId>
-        </dependency>
-
-        <!--接口文档-->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger.version}</version>
-        </dependency>
-
-
     </dependencies>
 
-    <build>
-        <finalName>${project.name}</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
     <repositories>
         <!--使用阿里云镜像-->
@@ -201,5 +84,6 @@
             <url>https://repo.spring.io/libs-milestone</url>
         </repository>
     </repositories>
+
 
 </project>

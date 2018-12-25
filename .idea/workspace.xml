@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b9367097-2239-438a-8b73-3c2c467361cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/doc/db/www_idreamyou_cn.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/doc/db/www_idreamyou_cn_modeler.ndm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/iandyou.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/IdreamyouApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/config/AuthorizationServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/config/MybatisPlusConfigurer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/config/ResourceServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/config/WebSecurityConfigurer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/constant/CommonConstants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/constant/SecurityConstants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/service/MyClientDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/service/MyUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/service/impl/MyUserDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/classes/com/idreamyou/iandyou/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/iandyou/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-entity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/iandyou/common/util/BaseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/mddoc/README-MANAGEMENT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/mddoc/README-ONE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/mddoc/README-TECHNOLOGY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/mddoc/README-TWO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/db/www_idreamyou_cn.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/db/www_idreamyou_cn.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/db/www_idreamyou_cn_modeler.ndm" beforeDir="false" afterPath="$PROJECT_DIR$/doc/db/www_idreamyou_cn_modeler.ndm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/banner/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/banner/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/IdreamyouApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/IdreamyouApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/config/MybatisPlusConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/config/MybatisPlusConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/config/WebSecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/config/WebSecurityConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/constant/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/constant/CommonConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/constant/SecurityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/constant/SecurityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-client/src/main/java/com/iandyou/common/client/iandyou/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-entity/src/main/java/com/iandyou/common/entity/idreamyou/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-entity/src/main/java/com/iandyou/common/entity/idreamyou/UserInfoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/service/MyClientDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/MyClientDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/service/impl/MyUserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/impl/MyUserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/idreamyou/util/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/iandyou/common/util/common/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bootserver/iandyou/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/idreamyou/IdreamyouApplicationTests.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/common/common-entity/target/" />
+    <ignored path="$PROJECT_DIR$/bootserver/meandyou/target/" />
+    <ignored path="$PROJECT_DIR$/common/common-client/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/bootserver/iandyou/target/" />
+    <ignored path="$PROJECT_DIR$/bootserver/target/" />
+    <ignored path="$PROJECT_DIR$/common/common-util/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.23.0" />
+      </map>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>org.projectlombok</find>
+      <find>mybatis-plus-annotation</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/bootserver/meandyou/pom.xml" />
+        <option value="$PROJECT_DIR$/common/common-entity/src/main/java/com/iandyou/common/entity/idreamyou/UserInfoEntity.java" />
+        <option value="$PROJECT_DIR$/common/common-entity/pom.xml" />
+        <option value="$PROJECT_DIR$/bootserver/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/common/common-client/src/main/java/com/iandyou/common/client/idreamyou/UserInfoEntity.java" />
+        <option value="$PROJECT_DIR$/common/common-client/src/main/java/com/iandyou/common/client/iandyou/dto/UserDTO.java" />
+        <option value="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/bootserver/iandyou/pom.xml" />
+        <option value="$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/UserService.java" />
+        <option value="$PROJECT_DIR$/common/common-client/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/common/common-util/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="922" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="idreamyou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="idreamyou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="idreamyou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="idreamyou" type="462c0819:PsiDirectoryNode" />
+              <item name="bootserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="idreamyou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="idreamyou" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545735207001" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common/common-client/src/main/java/com/iandyou/common/client" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="IdreamyouApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="iandyou" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.idreamyou.iandyou.IdreamyouApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9367097-2239-438a-8b73-3c2c467361cb" name="Default Changelist" comment="" />
+      <created>1545731777414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545731777414</updated>
+      <workItem from="1545731778753" duration="3190000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3190000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="922" extended-state="0" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info anchor="bottom" id="Run with VisualVM" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="CheckStyle" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Debug with VisualVM" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45421687" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46385542" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" visible="true" weight="0.21088019" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Mybatis datasource" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bootserver/iandyou/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootserver/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-entity/src/main/java/com/iandyou/common/entity/idreamyou/UserInfoEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-entity/src/main/java/com/iandyou/common/entity/idreamyou/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-client/src/main/java/com/iandyou/common/client/idreamyou/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-client/src/main/java/com/iandyou/common/client/idreamyou/UserInfoEntity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootserver/iandyou/src/main/java/com/idreamyou/iandyou/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootserver/iandyou/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-entity/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-client/src/main/java/com/iandyou/common/client/iandyou/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-util/src/main/java/com/iandyou/common/util/BaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-util/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-util/src/main/java/com/iandyou/common/util/common/SecurityUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
