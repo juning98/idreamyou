@@ -1,7 +1,7 @@
 package com.idreamyou.iandyou.server.controller;
 
 import com.iandyou.common.entity.idreamyou.UserEntity;
-import com.idreamyou.iandyou.api.login.UserControllerApi;
+import com.idreamyou.iandyou.api.UserControllerApi;
 import com.idreamyou.iandyou.server.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;

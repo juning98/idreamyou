@@ -41,7 +41,7 @@ public class Swagger2Config extends Swagger2Util {
                 .forCodeGeneration(false)
                 .select()
 //                .apis(basePackage("com.idreamyou.iandyou.server.controller" + splitor + "com.idreamyou.iandyou.api.login"))
-                .apis(basePackage("com.idreamyou.iandyou.api"))
+                .apis(basePackage("com.idreamyou.iandyou.server.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
