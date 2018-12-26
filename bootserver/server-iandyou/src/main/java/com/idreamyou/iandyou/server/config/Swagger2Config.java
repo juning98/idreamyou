@@ -11,6 +11,8 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import static springfox.documentation.builders.RequestHandlerSelectors.basePackage;
+
 /**
  * Swagger API文档配置
  *
@@ -38,7 +40,8 @@ public class Swagger2Config extends Swagger2Util {
                 .useDefaultResponseMessages(false)
                 .forCodeGeneration(false)
                 .select()
-                .apis(basePackage("com.idreamyou.iandyou.server.controller" + splitor + "com.idreamyou.iandyou.api.login"))
+//                .apis(basePackage("com.idreamyou.iandyou.server.controller" + splitor + "com.idreamyou.iandyou.api.login"))
+                .apis(basePackage("com.idreamyou.iandyou.api"))
                 .paths(PathSelectors.any())
                 .build();
     }
