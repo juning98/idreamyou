@@ -22,6 +22,7 @@ public class UserController  extends BaseController implements UserControllerApi
 
     @Override
     public UserEntity provinceListBySelective(@PathVariable Long id) {
+        logger.info("测试查询用户一个");
         return userService.getById(id);
     }
 }
