@@ -21,7 +21,7 @@ public class UserController  extends BaseController implements UserControllerApi
     private final UserService userService;
 
     @Override
-    public UserEntity provinceListBySelective(@PathVariable Long id) throws Exception {
+    public UserEntity provinceListBySelective(@PathVariable Long id) {
         return userService.getById(id);
     }
 }
