@@ -21,7 +21,7 @@ public class Swagger2Util {
         return input -> declaringClass(input).transform(handlerPackage(basePackage)).or(true);
     }
 
-    private static Function<Class<?>, Boolean> handlerPackage(final String basePackage)     {
+    private static Function<Class<?>, Boolean> handlerPackage(final String basePackage) {
         return input -> {
             // 循环判断匹配
             for (String strPackage : basePackage.split(splitor)) {

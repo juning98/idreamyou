@@ -3,6 +3,13 @@
 
 **基于Spring boot、OAuth2.0的IM即时通讯服务系统**  
 
+## 目录结构
+````
+common-client   返回客户端DTO或者封装类
+common-entity   数据库专用实体
+common-util     封装工具类
+````
+
 ## 社交公共调用base服务单元
 * 1.用户模块
 * 2.系统菜单 ？

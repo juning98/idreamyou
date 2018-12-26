@@ -25,7 +25,4 @@ public interface UserControllerApi {
     @GetMapping(value = "/{id}")
     UserEntity provinceListBySelective(@PathVariable Long id) throws Exception;
 
-    @GetMapping(value = "/test")
-    String test(@PathVariable Long id) throws Exception;
-
 }

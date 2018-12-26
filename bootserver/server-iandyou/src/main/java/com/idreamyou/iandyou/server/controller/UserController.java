@@ -22,13 +22,6 @@ public class UserController  extends BaseController implements UserControllerApi
 
     @Override
     public UserEntity provinceListBySelective(@PathVariable Long id) throws Exception {
-        logger.info("查询一个");
         return userService.getById(id);
-    }
-
-    @Override
-    public String test(Long id) throws Exception {
-        logger.info("测试成功");
-        return "成功,id值："+id;
     }
 }
