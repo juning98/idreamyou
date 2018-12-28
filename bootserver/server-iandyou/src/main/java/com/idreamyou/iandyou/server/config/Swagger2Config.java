@@ -5,11 +5,19 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.request.async.DeferredResult;
 import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.builders.AuthorizationCodeGrantBuilder;
+import springfox.documentation.builders.OAuthBuilder;
 import springfox.documentation.builders.PathSelectors;
-import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.*;
 import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spi.service.contexts.SecurityContext;
 import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger.web.SecurityConfiguration;
+import springfox.documentation.swagger.web.SecurityConfigurationBuilder;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import static springfox.documentation.builders.RequestHandlerSelectors.basePackage;
 
@@ -38,10 +46,11 @@ public class Swagger2Config extends Swagger2Util {
                 .useDefaultResponseMessages(false)
                 .forCodeGeneration(false)
                 .select()
-//                .apis(basePackage("com.idreamyou.iandyou.server.controller" + splitor + "com.idreamyou.iandyou.api.login"))
                 .apis(basePackage("com.idreamyou.iandyou.server.controller"))
                 .paths(PathSelectors.any())
-                .build();
+                .build()
+                .securitySchemes(Arrays.asList(securityScheme()))
+                .securityContexts(Arrays.asList(securityContext()));
     }
 
     //构建 api文档的详细信息函数,注意这里的注解引用的是哪个
@@ -50,6 +59,46 @@ public class Swagger2Config extends Swagger2Util {
                 //页面标题
                 .title("idreamyou-IM")
                 .version("1.0")
+                .build();
+    }
+
+    @Bean
+    public SecurityConfiguration security() {
+        return SecurityConfigurationBuilder.builder()
+                .clientId("app")
+                .clientSecret("app")
+                .scopeSeparator(" ")
+                .useBasicAuthenticationWithAccessCodeGrant(true)
+                .build();
+    }
+
+    private SecurityScheme securityScheme() {
+        GrantType grantType = new AuthorizationCodeGrantBuilder()
+                .tokenEndpoint(new TokenEndpoint("http://localhost:9090/oauth/token", "oauthtoken"))
+                .tokenRequestEndpoint(
+                        new TokenRequestEndpoint("http://localhost:9090/oauth/authorize", "app", "app"))
+                .build();
+
+        SecurityScheme oauth = new OAuthBuilder().name("spring_oauth")
+                .grantTypes(Arrays.asList(grantType))
+                .scopes(Arrays.asList(scopes()))
+                .build();
+        return oauth;
+    }
+
+    private AuthorizationScope[] scopes() {
+        AuthorizationScope[] scopes = {
+                new AuthorizationScope("server", "for read operations"),
+                new AuthorizationScope("write", "for write operations"),
+                new AuthorizationScope("foo", "Access foo API") };
+        return scopes;
+    }
+
+    private SecurityContext securityContext() {
+        return SecurityContext.builder()
+                .securityReferences(
+                        Arrays.asList(new SecurityReference("spring_oauth", scopes())))
+                .forPaths(PathSelectors.regex("/user.*"))
                 .build();
     }
 }

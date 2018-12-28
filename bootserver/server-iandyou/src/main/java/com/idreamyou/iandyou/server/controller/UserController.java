@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @AllArgsConstructor
-public class UserController  extends BaseController implements UserControllerApi{
+public class UserController extends BaseController implements UserControllerApi {
 
     private final UserService userService;
 
